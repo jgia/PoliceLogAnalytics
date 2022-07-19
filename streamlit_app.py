@@ -10,6 +10,7 @@ df = pd.read_csv("Master.csv")
 df['FormattedDateTime'] = pd.to_datetime(df['DateTime']).dt.date
 
 st.sidebar.write("Select incident types")
+
 st.write(" ")
 st.write("Select start and end date")
 
