@@ -342,7 +342,9 @@ view_state = pdk.ViewState(
 layer1 = pdk.Layer('ScatterplotLayer',
                   data = address_location,
                   get_position = '[Lon, Lat]',
-                  get_radius = 5,
+                  radius_scale=6,
+                  radius_min_pixels=1,
+                  radius_max_pixels=100,
                   get_color = [0,0,255],
                   pickable = True)
 
